@@ -1,3 +1,4 @@
-import {weightedList} from "https://raw.githubusercontent.com/randkid/Randkid/master/mod.ts"
+import data from "./data.js"
+import {weightedList} from "./deps.ts"
 
-export default await weightedList("./gender.csv")
+export default weightedList.getMaterial(data)
